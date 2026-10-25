@@ -2317,11 +2317,6 @@ do
 		return buffer.tostring(bytes)
 	end
 
-	--[[
-		For more info:
-		- https://github.com/luau/UniversalSynSaveInstance/blob/main/Tools/NotScriptable-Related/Potentially%20Missing%20Properties%20Dumper/Potentially%20Missing%20Properties%20Dumper.luau
-		- https://github.com/luau/UniversalSynSaveInstance/blob/main/Tools/NotScriptable-Related/NotScriptable%20Dumper/NotScriptable%20Dumper.py
-		]]
 	local NotScriptableFixes = {
 		Instance = {
 			AttributesSerialize = function(instance)
