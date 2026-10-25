@@ -1526,7 +1526,7 @@ local Binary_Encoders = {
 	end),
 
 	["PhysicalProperties"] = function(sbuf, vals, n)
-		sbuf:reserve(25 * n)
+		sbuf:_ensure(25 * n)
 		local buf = sbuf.buf
 		local o = sbuf.len
 		local wu8, wf32 = buffer.writeu8, buffer.writef32
