@@ -94,6 +94,11 @@ function StreamBuffer:writeu8(value)
 	buffer.writeu8(self.buf, offset, value)
 end
 
+function StreamBuffer:writeu16(value)
+	local offset = self:allocRegion(2)
+	buffer.writeu16(self.buf, offset, value)
+end
+
 function StreamBuffer:writeu32(value)
 	local offset = self:allocRegion(4)
 	buffer.writeu32(self.buf, offset, value)
